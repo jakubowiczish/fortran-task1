@@ -17,7 +17,7 @@ module bettermath
         allocate(C(size(A, 1), size(B, 2)))
         C = 0
 
-        write(*,*) "BETTERMULL KIND 4"
+        ! write(*,*) "BETTERMULL KIND 4"
 
         do j = 1, size(B, 2)
             do k = 1, size(A, 2)
@@ -38,7 +38,7 @@ module bettermath
         allocate(C(size(A, 1), size(B, 2)))
         C = 0
 
-        write(*,*) "BETTERMULL KIND 8"
+        ! write(*,*) "BETTERMULL KIND 8"
 
         do j = 1, size(B, 2)
             do k = 1, size(A, 2)
@@ -59,7 +59,7 @@ module bettermath
         allocate(C(size(A, 1), size(B, 2)))
         C = 0
 
-        write(*,*) "BETTERMULL KIND 16"
+        ! write(*,*) "BETTERMULL KIND 16"
 
         do j = 1, size(B, 2)
             do k = 1, size(A, 2)

@@ -17,7 +17,7 @@ module naivemath
         allocate(C(size(A, 1), size(B, 2)))
         C = 0
 
-        write(*,*) "NAIVMULL KIND 4"
+        ! write(*,*) "NAIVMULL KIND 4"
 
         do i = 1, size(A, 1)
             do j = 1, size(B, 2)
@@ -38,7 +38,7 @@ module naivemath
         allocate(C(size(A, 1), size(B, 2)))
         C = 0
 
-        write(*,*) "NAIVMULL KIND 8"
+        ! write(*,*) "NAIVMULL KIND 8"
 
         do i = 1, size(A, 1)
             do j = 1, size(B, 2)
@@ -59,7 +59,7 @@ module naivemath
         allocate(C(size(A, 1), size(B, 2)))
         C = 0
 
-        write(*,*) "NAIVMULL KIND 16"
+        ! write(*,*) "NAIVMULL KIND 16"
 
         do i = 1, size(A, 1)
             do j = 1, size(B, 2)
