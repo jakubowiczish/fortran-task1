@@ -1,5 +1,6 @@
 program main
     use naivemath
+    use bettermath
 
     real (kind = 4), allocatable, dimension(:, :) :: A4, B4
     real (kind = 4), allocatable, dimension(:, :) :: C4
@@ -11,16 +12,21 @@ program main
     real (kind = 16), allocatable, dimension(:, :) :: C16
 
     integer (kind = 4) :: n
+    integer (kind = 4) :: MATRIX_SIZE = 1280
     
     real (kind = 4) :: randomNumber4
     real (kind = 8) :: randomNumber8
     real (kind = 16) :: randomNumber16
 
+
+    real (kind = 16) :: startTime, finishTime, resultTime
+
     ! ####################################################################
-    !                              KIND 4 
+    !                              NAIVE KIND 4 
     ! ####################################################################
+
     n = 10
-    do while(n <= 1280)
+    do while(n <= MATRIX_SIZE)
         allocate(A4(n, n))
         allocate(B4(n, n))
         allocate(C4(n, n))
@@ -31,9 +37,18 @@ program main
         B4 = randomNumber4
     
         C4 = 0
-        C4 = naivmull(A4, B4)
 
-        write(*,*) C4
+        call cpu_time(startTime)
+        C4 = naivmull(A4, B4)
+        call cpu_time(finishTime)
+
+        resultTime = finishTime - startTime
+        
+        ! Format: Fw.d
+        ! w is the width of the variable and d is the number of decimal places to the right of the (implied) decimal point. 
+        print '("TIME OF NAIVE MULTIPLICATION (KIND 4): ",f15.6," seconds.")', resultTime
+
+        ! write(*,*) C4
     
         if(allocated(A4)) deallocate(A4)
         if(allocated(B4)) deallocate(B4)
@@ -45,12 +60,13 @@ program main
         n = n * 2
     end do
 
+
     ! ####################################################################
-    !                              KIND 8 
+    !                              NAIVE KIND 8 
     ! ####################################################################
     
     n = 10
-    do while(n <= 1280)
+    do while(n <= MATRIX_SIZE)
         allocate(A8(n, n))
         allocate(B8(n, n))
         allocate(C8(n, n))
@@ -60,9 +76,15 @@ program main
         B8 = randomNumber8
     
         C8 = 0
-        C8 = naivmull(A8, B8)
 
-        write(*,*) C8
+        call cpu_time(startTime)
+        C8 = naivmull(A8, B8)
+        call cpu_time(finishTime)
+        
+        resultTime = finishTime - startTime
+        print '("TIME OF NAIVE MULTIPLICATION (KIND 8): ",f15.6," seconds.")', resultTime
+
+        ! write(*,*) C8
     
         if(allocated(A8)) deallocate(A8)
         if(allocated(B8)) deallocate(B8)
@@ -76,11 +98,11 @@ program main
 
 
     ! ####################################################################
-    !                              KIND 16 
+    !                              NAIVE KIND 16 
     ! ####################################################################
 
     n = 10
-    do while(n <= 1280)
+    do while(n <= MATRIX_SIZE)
         allocate(A16(n, n))
         allocate(B16(n, n))
         allocate(C16(n, n))
@@ -90,9 +112,16 @@ program main
         B16 = randomNumber16
     
         C16 = 0
-        C16 = naivmull(A16, B16)
 
-        write(*,*) C16
+        call cpu_time(startTime)
+        C16 = naivmull(A16, B16)
+        call cpu_time(finishTime)
+        
+        resultTime = finishTime - startTime
+        print '("TIME OF NAIVE MULTIPLICATION (KIND 16): ",f15.6," seconds.")', resultTime
+
+        
+        ! write(*,*) C16
     
         if(allocated(A16)) deallocate(A16)
         if(allocated(B16)) deallocate(B16)
@@ -103,6 +132,8 @@ program main
 
         n = n * 2
     end do
+
+    
     
 
 end program main
