@@ -60,8 +60,6 @@ program main
         if(allocated(B4)) deallocate(B4)
         if(allocated(C4)) deallocate(C4)
 
-        
-
         n = n * 2
     end do
 
