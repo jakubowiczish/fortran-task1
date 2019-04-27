@@ -1,0 +1,119 @@
+ TIME OF NAIVE MULTIPLICATION (KIND 4)
+SIZE: 10       0.000015 seconds.
+SIZE: 20       0.000027 seconds.
+SIZE: 40       0.000228 seconds.
+SIZE: 80       0.001855 seconds.
+SIZE: 160       0.018144 seconds.
+SIZE: 320       0.055444 seconds.
+SIZE: 640       0.405963 seconds.
+SIZE: 1280       4.475551 seconds.
+
+ TIME OF NAIVE MULTIPLICATION (KIND 8)
+SIZE: 10       0.000004 seconds.
+SIZE: 20       0.000007 seconds.
+SIZE: 40       0.000115 seconds.
+SIZE: 80       0.000701 seconds.
+SIZE: 160       0.005913 seconds.
+SIZE: 320       0.043340 seconds.
+SIZE: 640       0.424438 seconds.
+SIZE: 1280       4.902471 seconds.
+
+ TIME OF NAIVE MULTIPLICATION (KIND 16)
+SIZE: 10       0.000085 seconds.
+SIZE: 20       0.000418 seconds.
+SIZE: 40       0.003128 seconds.
+SIZE: 80       0.024509 seconds.
+SIZE: 160       0.180757 seconds.
+SIZE: 320       1.415611 seconds.
+SIZE: 640      11.687337 seconds.
+SIZE: 1280     129.127114 seconds.
+
+ TIME OF BETTER MULTIPLICATION (KIND 4)
+SIZE: 10       0.000003 seconds.
+SIZE: 20       0.000004 seconds.
+SIZE: 40       0.000060 seconds.
+SIZE: 80       0.000171 seconds.
+SIZE: 160       0.001298 seconds.
+SIZE: 320       0.011161 seconds.
+SIZE: 640       0.083404 seconds.
+SIZE: 1280       0.768260 seconds.
+
+ TIME OF BETTER MULTIPLICATION (KIND 8)
+SIZE: 10       0.000002 seconds.
+SIZE: 20       0.000025 seconds.
+SIZE: 40       0.000044 seconds.
+SIZE: 80       0.000338 seconds.
+SIZE: 160       0.001893 seconds.
+SIZE: 320       0.016223 seconds.
+SIZE: 640       0.127771 seconds.
+SIZE: 1280       1.225980 seconds.
+
+ TIME OF BETTER MULTIPLICATION (KIND 16)
+SIZE: 10       0.000074 seconds.
+SIZE: 20       0.000369 seconds.
+SIZE: 40       0.002530 seconds.
+SIZE: 80       0.022636 seconds.
+SIZE: 160       0.161010 seconds.
+SIZE: 320       1.466600 seconds.
+SIZE: 640      11.369447 seconds.
+SIZE: 1280      87.891922 seconds.
+
+ TIME OF DOT_PRODUCT MULTIPLICATION (KIND 4)
+SIZE: 10       0.000006 seconds.
+SIZE: 20       0.000023 seconds.
+SIZE: 40       0.000147 seconds.
+SIZE: 80       0.000802 seconds.
+SIZE: 160       0.005300 seconds.
+SIZE: 320       0.042710 seconds.
+SIZE: 640       0.350229 seconds.
+SIZE: 1280       3.792952 seconds.
+
+ TIME OF DOT_PRODUCT MULTIPLICATION (KIND 8)
+SIZE: 10       0.000023 seconds.
+SIZE: 20       0.000007 seconds.
+SIZE: 40       0.000130 seconds.
+SIZE: 80       0.000560 seconds.
+SIZE: 160       0.005445 seconds.
+SIZE: 320       0.047138 seconds.
+SIZE: 640       0.447223 seconds.
+SIZE: 1280       5.235658 seconds.
+
+ TIME OF DOT_PRODUCT MULTIPLICATION (KIND 16)
+SIZE: 10       0.000057 seconds.
+SIZE: 20       0.000410 seconds.
+SIZE: 40       0.003602 seconds.
+SIZE: 80       0.025088 seconds.
+SIZE: 160       0.184429 seconds.
+SIZE: 320       1.695326 seconds.
+SIZE: 640      15.980049 seconds.
+SIZE: 1280     201.333684 seconds.
+
+ TIME OF MATMUL MULTIPLICATION (KIND 4)
+SIZE: 10       0.000006 seconds.
+SIZE: 20       0.000003 seconds.
+SIZE: 40       0.000091 seconds.
+SIZE: 80       0.000059 seconds.
+SIZE: 160       0.000381 seconds.
+SIZE: 320       0.002444 seconds.
+SIZE: 640       0.019240 seconds.
+SIZE: 1280       0.126542 seconds.
+
+ TIME OF MATMUL MULTIPLICATION (KIND 8)
+SIZE: 10       0.000001 seconds.
+SIZE: 20       0.000004 seconds.
+SIZE: 40       0.000122 seconds.
+SIZE: 80       0.000157 seconds.
+SIZE: 160       0.000505 seconds.
+SIZE: 320       0.003783 seconds.
+SIZE: 640       0.029735 seconds.
+SIZE: 1280       0.196012 seconds.
+
+ TIME OF MATMUL MULTIPLICATION (KIND 16)
+SIZE: 10       0.000053 seconds.
+SIZE: 20       0.000521 seconds.
+SIZE: 40       0.004345 seconds.
+SIZE: 80       0.025733 seconds.
+SIZE: 160       0.171242 seconds.
+SIZE: 320       1.347252 seconds.
+SIZE: 640      10.055222 seconds.
+SIZE: 1280      78.246216 seconds.
