@@ -1,6 +1,6 @@
 unset grid
 set terminal pdf
-set output "wykres4.pdf"
+set output "wykres16.pdf"
 set key box top left
 set multi
 set logscale x

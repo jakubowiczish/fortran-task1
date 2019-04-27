@@ -1,6 +1,6 @@
 unset grid
 set terminal pdf
-set output "wykres4.pdf"
+set output "wykres8.pdf"
 set key box top left
 set multi
 set logscale x
@@ -15,7 +15,7 @@ set ylabel "multiplication time" font "Arial, 14"
 set xtics font "Arial, 14"
 set ytics font "Arial, 14"
 set termoption dashed
-plot [10:1280] 'naivmull8'
+plot [10:1280][1E-7:1E+1] 'naivmull8'
 replot 'bettmull8'
 replot 'dotmull8'
 replot 'matmull8'
